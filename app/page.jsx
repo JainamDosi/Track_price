@@ -1,0 +1,80 @@
+import { Button } from "@/components/ui/button";
+import { LogIn,Rabbit,Shield,Bell } from "lucide-react";
+import Image from "next/image";
+
+export default function page() {
+ 
+
+  const user=null;
+
+
+  const FEATURES = [
+    {
+      icon: Rabbit,
+      title: "Lightning Fast",
+      description:
+        "Deal Drop extracts prices in seconds, handling JavaScript and dynamic content",
+    },
+    {
+      icon: Shield,
+      title: "Always Reliable",
+      description:
+        "Works across all major e-commerce sites with built-in anti-bot protection",
+    },
+    {
+      icon: Bell,
+      title: "Smart Alerts",
+      description: "Get notified instantly when prices drop below your target",
+    },
+  ];
+ 
+ 
+ 
+ 
+ 
+ 
+ return <main className="min-h-screen bg-linear-to-br from-orange-50 via white-to-orange-50">
+      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-10">
+        <div className=" max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"> 
+         <div className="flex items-center gap-3">
+          <Image src="/image.png" alt="Deal Drop Logo" width={600} height={200}  className="h-10 w-auto"/>
+          
+          </div> 
+          <Button
+            variant="default"
+            size="sm"
+            className="bg-orange-500 hover:bg-orange-600 gap-2">
+            <LogIn/>
+            Sign In
+          </Button>
+
+     
+      </div>
+      </header>
+      
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+        <div> Made with 🏓</div>
+        <h2> 
+          Never miss a deal again!Track prices from any e-commerce site. Get instant alerts when prices drop.
+          <p>
+             
+          </p>
+        </h2>
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>;
+}
